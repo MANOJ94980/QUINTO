@@ -1,0 +1,278 @@
+{
+  "timestamp": 1791617359.7135413,
+  "seed": 42,
+  "qber_vs_intercept": [
+    {
+      "intercept_pct": 0,
+      "raw_qber": 0.045,
+      "qber_bound": 0.066,
+      "link_state": "DEGRADED"
+    },
+    {
+      "intercept_pct": 10,
+      "raw_qber": 0.325,
+      "qber_bound": 0.3657,
+      "link_state": "COMPROMISED"
+    },
+    {
+      "intercept_pct": 20,
+      "raw_qber": 0.275,
+      "qber_bound": 0.3141,
+      "link_state": "COMPROMISED"
+    },
+    {
+      "intercept_pct": 30,
+      "raw_qber": 0.29,
+      "qber_bound": 0.3297,
+      "link_state": "COMPROMISED"
+    },
+    {
+      "intercept_pct": 40,
+      "raw_qber": 0.2625,
+      "qber_bound": 0.3012,
+      "link_state": "COMPROMISED"
+    },
+    {
+      "intercept_pct": 50,
+      "raw_qber": 0.2575,
+      "qber_bound": 0.296,
+      "link_state": "COMPROMISED"
+    },
+    {
+      "intercept_pct": 60,
+      "raw_qber": 0.27,
+      "qber_bound": 0.309,
+      "link_state": "COMPROMISED"
+    },
+    {
+      "intercept_pct": 70,
+      "raw_qber": 0.305,
+      "qber_bound": 0.3451,
+      "link_state": "COMPROMISED"
+    },
+    {
+      "intercept_pct": 80,
+      "raw_qber": 0.3,
+      "qber_bound": 0.34,
+      "link_state": "COMPROMISED"
+    },
+    {
+      "intercept_pct": 90,
+      "raw_qber": 0.3,
+      "qber_bound": 0.34,
+      "link_state": "COMPROMISED"
+    },
+    {
+      "intercept_pct": 100,
+      "raw_qber": 0.3275,
+      "qber_bound": 0.3682,
+      "link_state": "COMPROMISED"
+    }
+  ],
+  "detection_prob_vs_sample": [
+    {
+      "sample_size": 10,
+      "p_detect_100pct": 0.9437,
+      "p_detect_50pct": 0.7369,
+      "p_detect_20pct": 0.4013
+    },
+    {
+      "sample_size": 25,
+      "p_detect_100pct": 0.9992,
+      "p_detect_50pct": 0.9645,
+      "p_detect_20pct": 0.7226
+    },
+    {
+      "sample_size": 50,
+      "p_detect_100pct": 1.0,
+      "p_detect_50pct": 0.9987,
+      "p_detect_20pct": 0.9231
+    },
+    {
+      "sample_size": 100,
+      "p_detect_100pct": 1.0,
+      "p_detect_50pct": 1.0,
+      "p_detect_20pct": 0.9941
+    },
+    {
+      "sample_size": 200,
+      "p_detect_100pct": 1.0,
+      "p_detect_50pct": 1.0,
+      "p_detect_20pct": 1.0
+    },
+    {
+      "sample_size": 400,
+      "p_detect_100pct": 1.0,
+      "p_detect_50pct": 1.0,
+      "p_detect_20pct": 1.0
+    },
+    {
+      "sample_size": 600,
+      "p_detect_100pct": 1.0,
+      "p_detect_50pct": 1.0,
+      "p_detect_20pct": 1.0
+    },
+    {
+      "sample_size": 800,
+      "p_detect_100pct": 1.0,
+      "p_detect_50pct": 1.0,
+      "p_detect_20pct": 1.0
+    },
+    {
+      "sample_size": 1000,
+      "p_detect_100pct": 1.0,
+      "p_detect_50pct": 1.0,
+      "p_detect_20pct": 1.0
+    }
+  ],
+  "false_alarm_vs_noise": [
+    {
+      "noise_pct": 0.0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "noise_pct": 2.0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "noise_pct": 4.0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "noise_pct": 6.0,
+      "false_alarm_rate": 0.0
+    },
+    {
+      "noise_pct": 8.0,
+      "false_alarm_rate": 0.0136
+    },
+    {
+      "noise_pct": 10.0,
+      "false_alarm_rate": 0.2237
+    },
+    {
+      "noise_pct": 12.0,
+      "false_alarm_rate": 0.7
+    },
+    {
+      "noise_pct": 15.0,
+      "false_alarm_rate": 0.9875
+    }
+  ],
+  "key_availability": [
+    {
+      "name": "No Attack (Clean Link)",
+      "qgs_avail": 100.0,
+      "fail_closed_avail": 100.0
+    },
+    {
+      "name": "20% Interception",
+      "qgs_avail": 98.5,
+      "fail_closed_avail": 82.0
+    },
+    {
+      "name": "50% Interception",
+      "qgs_avail": 95.0,
+      "fail_closed_avail": 0.0
+    },
+    {
+      "name": "100% Interception",
+      "qgs_avail": 92.0,
+      "fail_closed_avail": 0.0
+    },
+    {
+      "name": "Fiber Cut / Drop",
+      "qgs_avail": 85.0,
+      "fail_closed_avail": 0.0
+    }
+  ],
+  "forgery_benchmark": [
+    {
+      "attack_type": "Tampered Payload",
+      "classical_accepted": 100,
+      "classical_rejected": 0,
+      "qgs_accepted": 0,
+      "qgs_rejected": 100
+    },
+    {
+      "attack_type": "Replayed Command",
+      "classical_accepted": 100,
+      "classical_rejected": 0,
+      "qgs_accepted": 0,
+      "qgs_rejected": 100
+    },
+    {
+      "attack_type": "Quantum Oracle Forged Sig",
+      "classical_accepted": 100,
+      "classical_rejected": 0,
+      "qgs_accepted": 0,
+      "qgs_rejected": 100
+    },
+    {
+      "attack_type": "Valid Auth Command",
+      "classical_accepted": 100,
+      "classical_rejected": 0,
+      "qgs_accepted": 100,
+      "qgs_rejected": 0
+    }
+  ],
+  "messages_readable": [
+    {
+      "scenario": "Grid TRIP_BREAKER",
+      "classical_readable_pct": 100.0,
+      "qgs_readable_pct": 0.0
+    },
+    {
+      "scenario": "Rail MOVEMENT_AUTHORITY",
+      "classical_readable_pct": 100.0,
+      "qgs_readable_pct": 0.0
+    },
+    {
+      "scenario": "AV BRAKE_COMMAND",
+      "classical_readable_pct": 100.0,
+      "qgs_readable_pct": 0.0
+    }
+  ],
+  "latency_overhead": [
+    {
+      "metric": "Key Establishment (ms)",
+      "classical_rsa": 4.2,
+      "qgs_qkd_pqc": 18.5
+    },
+    {
+      "metric": "Per-Frame Encrypt/Sign (ms)",
+      "classical_rsa": 1.1,
+      "qgs_qkd_pqc": 0.8
+    },
+    {
+      "metric": "Per-Frame Decrypt/Verify (ms)",
+      "classical_rsa": 0.3,
+      "qgs_qkd_pqc": 0.4
+    },
+    {
+      "metric": "Frame Tag Overhead (Bytes)",
+      "classical_rsa": 128,
+      "qgs_qkd_pqc": 96
+    }
+  ],
+  "scenario_outcomes": [
+    {
+      "scenario": "grid",
+      "command": "TRIP_BREAKER",
+      "classical_outcome": "Blackout Triggered (Unsafe)",
+      "qgs_outcome": "Tampering Rejected; Link Deferral (Safe)"
+    },
+    {
+      "scenario": "rail",
+      "command": "SIGNAL_CLEAR",
+      "classical_outcome": "Collision Hazard (Unsafe)",
+      "qgs_outcome": "Signature Verify Fail; Signal Maintained Red (Safe)"
+    },
+    {
+      "scenario": "av",
+      "command": "SPEED_LIMIT_UPDATE",
+      "classical_outcome": "Overspeed Collision Risk (Unsafe)",
+      "qgs_outcome": "Near Miss; Onboard Emergency Brake Activated (Safe Failsafe)"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "grid": {
+    "name": "Power Grid Infrastructure",
+    "location": "State Load Despatch Centre (SLDC)",
+    "fiber_length_km": 45.0,
+    "attenuation_db_km": 0.2,
+    "commands": {
+      "TRIP_BREAKER": { "criticality": "critical", "description": "Trip 400kV Feed Breaker", "unsafe_outcome": "Feeder opens unexpectedly, regional district blackout" },
+      "CLOSE_BREAKER": { "criticality": "critical", "description": "Close Main Transformer Breaker", "unsafe_outcome": "Out-of-phase closure, catastrophic transformer failure" },
+      "LOAD_SHED": { "criticality": "high", "description": "Execute Emergency Load Shedding", "unsafe_outcome": "Unjustified industrial power cut" },
+      "TELEMETRY": { "criticality": "routine", "description": "Grid Frequency & Voltage Telemetry", "unsafe_outcome": "Minor telemetry display error" }
+    }
+  },
+  "rail": {
+    "name": "Railway Signaling & Interlocking",
+    "location": "Tirupati Divisional Control Office",
+    "fiber_length_km": 30.0,
+    "attenuation_db_km": 0.2,
+    "commands": {
+      "MOVEMENT_AUTHORITY": { "criticality": "critical", "description": "Issue Train Movement Authority", "unsafe_outcome": "Authority extended past limit into occupied track segment" },
+      "SIGNAL_CLEAR": { "criticality": "critical", "description": "Clear Main Line Signal (Aspect Green)", "unsafe_outcome": "Signal cleared onto occupied block (collision hazard)" },
+      "POINT_SET": { "criticality": "critical", "description": "Set Interlocking Switch Points", "unsafe_outcome": "Points moved under moving train (derailment)" },
+      "EMERGENCY_STOP": { "criticality": "critical", "description": "Broadcast Emergency Stop Command", "unsafe_outcome": "Unnecessary line-wide emergency stop" },
+      "SPEED_RESTRICTION": { "criticality": "high", "description": "Set Temporary Speed Limit", "unsafe_outcome": "Overspeed through tight curve" },
+      "TELEMETRY": { "criticality": "routine", "description": "Axle Counter & Track Circuit Status", "unsafe_outcome": "Inaccurate dispatch status" }
+    }
+  },
+  "av": {
+    "name": "Autonomous Vehicle Fleet Management",
+    "location": "Urban V2X Infrastructure Gateway",
+    "fiber_length_km": 15.0,
+    "attenuation_db_km": 0.2,
+    "commands": {
+      "BRAKE_COMMAND": { "criticality": "critical", "description": "V2X Remote Brake Activation", "unsafe_outcome": "Unwarranted brake lockup on high-speed artery" },
+      "SIGNAL_PHASE": { "criticality": "high", "description": "Broadcast Traffic Signal Advisory", "unsafe_outcome": "Wrong signal phase broadcast; onboard failsafe engages near miss" },
+      "SPEED_LIMIT_UPDATE": { "criticality": "high", "description": "Update Dynamic Corridor Speed", "unsafe_outcome": "Wrong speed limit; onboard collision avoidance engages near miss" },
+      "ROUTE_UPDATE": { "criticality": "high", "description": "Dynamic Reroute Command", "unsafe_outcome": "Vehicle routed into closed construction zone" },
+      "HD_MAP_UPDATE": { "criticality": "routine", "description": "Local HD Map Tile Delta", "unsafe_outcome": "Outdated map layer" }
+    }
+  }
+}
